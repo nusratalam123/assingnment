@@ -15,4 +15,4 @@ function megaFriend(array){
 }
 var array=["alam","jalom","kaloma","jahamana"];
 var element=megaFriend(array);
-console.log(max)
+console.log(element)
