@@ -1,5 +1,15 @@
 function hotelCost(totalDay){
     var totalCost=0;
+
+    if(totalDay<0||totalDay==0){
+        if(totalDay<0){
+            return "Days value is negative";
+        }
+        else{
+            return "total cost is zero";
+        }
+    }
+    
     if(totalDay<=10){  //jodi total days 1 thakka 10 tar modha hoy 
         totalCost=totalDay*100; //given that 1 to 10 days hola per day=100 taka
     }
@@ -18,7 +28,9 @@ function hotelCost(totalDay){
         totalCost=firstPart+secondPart+thirdPart; //total cost for anys days and days gulo 20 ar vase
  
      }
+
     return totalCost;
 }
-var totaltaka=hotelCost(30);
+
+var totaltaka=hotelCost(-4);
 console.log(totaltaka)
