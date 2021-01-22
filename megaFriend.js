@@ -1,18 +1,14 @@
 function megaFriend(array){
-    var c=0;
-    var unique=[];
-    for( var i=0;i<array.length;i++){
-        var c=array[i].length;
-        unique.push(c);
-        c=0;
-    for(var j=0;j<unique.length;i++){
-    var max=unique[0];
-    if(unique[i]>max){
-        max=unique[i];
-    }
-    } }
-    return max;
+    var maxArray=array[0]; // array ar first value ka define korse maxArray dara
+        for(let j=0;j<array.length;j++){
+            var elementArray=array[j];
+            if(maxArray.length<elementArray.length){ //compeare two array value
+                maxArray=elementArray;   //if elementArray gather than maxArray then this condition
+
+            }
+        }
+    return maxArray;
 }
-var array=["alam","jalom","kaloma","jahamana"];
-var element=megaFriend(array);
-console.log(element)
+var array=["jagangiralam","mdsharafatullah","kalom","jahamana"];
+var largeName=megaFriend(array);
+console.log(largeName)
